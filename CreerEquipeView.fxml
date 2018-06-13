@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root alignment="TOP_LEFT" gridLinesVisible="false" stylesheets="@CreerEquipeStyle.css" type="javafx.scene.layout.GridPane" vgap="40" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <Rectangle fx:id="menu" height="1200.0" width="270.0" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.rowSpan="2147483647" />
+    <Rectangle fx:id="banniere" height="200.0" width="1920.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Rectangle fx:id="contour" fill="WHITE" height="500.0" stroke="BLACK" strokeWidth="5.0" width="1035.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <GridPane.margin>
+            <Insets left="100.0" top="400.0" />
+        </GridPane.margin></Rectangle>
+    <Text fx:id="banniereText" fill="WHITE" text="Seek'n'Play" GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <GridPane.margin>
+            <Insets left="480.0" />
+        </GridPane.margin>
+        <font>
+            <Font size="36.0" />
+        </font></Text>
+    <ImageView fitWidth="150" preserveRatio="true" smooth="true" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <image>
+            <Image url="https://zupimages.net/up/18/21/08z7.png" />
+        </image>
+        <GridPane.margin>
+            <Insets left="60.0" />
+        </GridPane.margin>
+    </ImageView>
+    <ImageView fitWidth="150" preserveRatio="true" smooth="true" GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <image>
+            <Image url="https://zupimages.net/up/18/22/do5r.jpg" />
+        </image>
+        <GridPane.margin>
+            <Insets left="750.0" />
+        </GridPane.margin>
+    </ImageView>
+    <ImageView fitWidth="150" preserveRatio="true" smooth="true" GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <image>
+            <Image url="https://zupimages.net/up/18/22/do5r.jpg" />
+        </image>
+        <GridPane.margin>
+            <Insets left="250.0" />
+        </GridPane.margin>
+    </ImageView>
+    <Text id="menu1" fx:id="menu1" fill="WHITE" text="Accueil" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <GridPane.margin>
+            <Insets left="30.0" />
+        </GridPane.margin>
+        <font>
+            <Font size="18.0" />
+        </font></Text>
+    <Text fx:id="connexion" fill="WHITE" text="Connexion" GridPane.columnIndex="0" GridPane.columnSpan="8" GridPane.rowIndex="1">
+        <GridPane.margin>
+            <Insets left="78.0" />
+        </GridPane.margin>
+        <font>
+            <Font size="24.0" />
+        </font></Text>
+    <Text fx:id="menu2" fill="WHITE" text=" Événements" GridPane.rowIndex="4">
+        <GridPane.margin>
+            <Insets left="22.0" />
+        </GridPane.margin>
+        <font>
+            <Font size="18.0" />
+        </font></Text>
+    <Text fx:id="menu3" fill="WHITE" text="À venir" GridPane.rowIndex="5">
+        <GridPane.margin>
+            <Insets left="30.0" />
+        </GridPane.margin>
+        <font>
+            <Font size="18.0" />
+        </font></Text>
+    <Text fx:id="menu4" fill="WHITE" text="Classement" GridPane.rowIndex="6">
+        <GridPane.margin>
+            <Insets left="30.0" />
+        </GridPane.margin>
+        <font>
+            <Font size="18.0" />
+        </font></Text>
+    <Text fx:id="menu5" fill="WHITE" text="Inscription" GridPane.rowIndex="7">
+        <GridPane.margin>
+            <Insets left="30.0" />
+        </GridPane.margin>
+        <font>
+            <Font size="18.0" />
+        </font></Text>
+    <Text fx:id="menu6" fill="WHITE" text="Vos discussions" GridPane.rowIndex="8">
+        <GridPane.margin>
+            <Insets left="30.0" />
+        </GridPane.margin>
+        <font>
+            <Font size="18.0" />
+        </font></Text>
+
+    <Text fx:id="inscription1" fill="black" text="Création d'équipe :" GridPane.columnIndex="1" GridPane.rowIndex="2">
+
+        <font>
+            <Font name="Arial" size="48.0" />
+        </font>
+        <GridPane.margin>
+            <Insets bottom="50.0" left="150.0" top="50.0" />
+        </GridPane.margin></Text>
+    <Text fx:id="inscriptionNom" fill="black" text="Nom de l'équipe :" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <font>
+            <Font name="Arial" size="20.0" />
+        </font>
+        <GridPane.margin>
+            <Insets left="191.0" top="50.0" />
+        </GridPane.margin></Text>
+
+    <Text fx:id="inscriptionPrenom" fill="black" text="Membres :" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <font>
+            <Font name="Arial" size="20.0" />
+        </font>
+        <GridPane.margin>
+            <Insets left="261.0" top="50.0" />
+        </GridPane.margin></Text>
+    <Text fx:id="inscriptionUtilisateur" fill="black" text="Tag de l'équipe :" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <font>
+            <Font name="Arial" size="20.0" />
+        </font>
+        <GridPane.margin>
+            <Insets left="200.0" top="50.0" />
+        </GridPane.margin></Text>
+    <TextField fx:id="inscriptionTapePrenom" maxHeight="40.0" maxWidth="300.0" minWidth="0.0" prefHeight="50.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <GridPane.margin>
+            <Insets left="400.0" top="50.0" />
+        </GridPane.margin>
+    </TextField>
+    <TextField fx:id="inscriptionTapeUtilisateur" maxHeight="40.0" maxWidth="300.0" minWidth="0.0" prefHeight="50.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <GridPane.margin>
+            <Insets left="400.0" top="50.0" />
+        </GridPane.margin>
+    </TextField>
+    <Button fx:id="bouton" cache="true" mnemonicParsing="false" text="New" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <GridPane.margin>
+            <Insets left="500.0" top="50.0" />
+        </GridPane.margin>
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+        <font>
+            <Font size="16.0" />
+        </font>
+        <padding>
+            <Insets bottom="50.0" left="25.0" right="25.0" top="10.0" />
+        </padding>
+    </Button>
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Emma le sang" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <GridPane.margin>
+         <Insets left="650.0" top="20.0" />
+      </GridPane.margin>
+   </Text>
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Leo le SAV" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <GridPane.margin>
+         <Insets left="650.0" top="80.0" />
+      </GridPane.margin>
+   </Text>
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="+" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <GridPane.margin>
+            <Insets left="530.0" top="80.0" />
+        </GridPane.margin>
+        <font>
+            <Font size="30.0" />
+        </font></Text>
+    <Button fx:id="inscriptionTapeValider" maxHeight="50.0" maxWidth="150.0" minHeight="40.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" text="Valider" GridPane.columnIndex="1" GridPane.rowIndex="6">
+        <GridPane.margin>
+            <Insets left="600.0" top="200.0" />
+        </GridPane.margin>
+        <font>
+            <Font size="18.0" />
+        </font>
+
+    </Button>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" />
+        <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" />
+        <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" />
+        <RowConstraints minHeight="45.0" prefHeight="45.0" />
+        <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" />
+        <RowConstraints maxHeight="45.0" minHeight="0.0" prefHeight="45.0" />
+        <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" />
+        <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" />
+    </rowConstraints>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+</fx:root>

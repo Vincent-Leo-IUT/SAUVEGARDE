@@ -2,17 +2,15 @@ package fr.univ_amu.iut;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
+import java.awt.*;
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
-public class AVenirController extends GridPane implements Initializable {
+public class CreerEquipeController extends GridPane{
     @FXML
     private GridPane Grid;
 
@@ -49,8 +47,8 @@ public class AVenirController extends GridPane implements Initializable {
     @FXML
     private Button bouton;
 
-    public AVenirController() {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AVenirView.fxml"));
+    public CreerEquipeController() {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CreerEquipeView.fxml"));
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
 
@@ -61,7 +59,4 @@ public class AVenirController extends GridPane implements Initializable {
         }
     }
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-    }
 }
